@@ -1,0 +1,38 @@
+buildscript {
+	ext {
+		kotlinVersion = '1.0.3'
+		springBootVersion = '1.4.0.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+	}
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'spring-boot'
+
+jar {
+	baseName = 'gitbot'
+	version = '0.0.1-SNAPSHOT'
+}
+
+repositories {
+	mavenCentral()
+	jcenter()
+	maven {url  "https://jitpack.io"}
+}
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile("org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}")
+
+	compile 'ch.qos.logback:logback-classic:1.1.7'
+	compile 'com.google.code.gson:gson:2.6.2'
+	compile "com.github.austinv11:Discord4j:2.5.2"
+
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}

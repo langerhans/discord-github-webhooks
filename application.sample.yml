@@ -1,0 +1,9 @@
+spring:
+  port: 8080 # Server port to listen on
+
+bot:
+  discordtoken: "" # Discord bot token
+  targetChannel: "" # Channel ID of the channel to post to
+
+github:
+  secret: "" # Secret you set on GitHub for webhook delivery verification
