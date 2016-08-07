@@ -1,4 +1,4 @@
-package de.langerhans.discord
+package de.langerhans.discord.gitbot
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.stereotype.Component

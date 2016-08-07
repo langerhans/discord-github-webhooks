@@ -1,4 +1,4 @@
-package de.langerhans.discord.util
+package de.langerhans.discord.gitbot.util
 
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.ResponseStatus

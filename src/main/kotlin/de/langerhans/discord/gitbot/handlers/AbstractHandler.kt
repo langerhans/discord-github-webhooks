@@ -1,9 +1,9 @@
-package de.langerhans.discord.handlers
+package de.langerhans.discord.gitbot.handlers
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import de.langerhans.discord.BotConfig
-import de.langerhans.discord.util.GithubDateTypeAdapter
+import de.langerhans.discord.gitbot.BotConfig
+import de.langerhans.discord.gitbot.util.GithubDateTypeAdapter
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 import sx.blah.discord.api.IDiscordClient

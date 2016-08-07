@@ -1,6 +1,6 @@
-package de.langerhans.discord.handlers
+package de.langerhans.discord.gitbot.handlers
 
-import de.langerhans.discord.models.IssuesEvent
+import de.langerhans.discord.gitbot.models.IssuesEvent
 import org.springframework.stereotype.Component
 
 /**

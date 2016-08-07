@@ -1,4 +1,4 @@
-package de.langerhans.discord.util
+package de.langerhans.discord.gitbot.util
 
 import com.google.gson.JsonSyntaxException
 import com.google.gson.TypeAdapter

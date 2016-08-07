@@ -1,6 +1,6 @@
-package de.langerhans.discord.discord
+package de.langerhans.discord.gitbot.discord
 
-import de.langerhans.discord.BotConfig
+import de.langerhans.discord.gitbot.BotConfig
 import org.springframework.beans.factory.DisposableBean
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Bean

@@ -1,4 +1,4 @@
-package de.langerhans.discord.models
+package de.langerhans.discord.gitbot.models
 
 import com.google.gson.annotations.SerializedName
 import java.util.*

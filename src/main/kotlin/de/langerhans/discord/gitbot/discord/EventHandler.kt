@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package de.langerhans.discord.discord
+package de.langerhans.discord.gitbot.discord
 
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.DisposableBean

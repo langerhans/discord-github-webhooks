@@ -1,9 +1,9 @@
-package de.langerhans.discord.controllers
+package de.langerhans.discord.gitbot.controllers
 
-import de.langerhans.discord.GithubConfig
-import de.langerhans.discord.handlers.IssueHandler
-import de.langerhans.discord.handlers.PrHandler
-import de.langerhans.discord.util.SignatureVerificationFailedException
+import de.langerhans.discord.gitbot.GithubConfig
+import de.langerhans.discord.gitbot.handlers.IssueHandler
+import de.langerhans.discord.gitbot.handlers.PrHandler
+import de.langerhans.discord.gitbot.util.SignatureVerificationFailedException
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
