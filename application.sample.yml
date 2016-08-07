@@ -7,3 +7,7 @@ bot:
 
 github:
   secret: "" # Secret you set on GitHub for webhook delivery verification
+
+logging:
+  path: /path/to/
+  file: gitbot.log
