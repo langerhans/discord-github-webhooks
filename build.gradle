@@ -10,6 +10,9 @@ buildscript {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 		classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
 	}
+	configurations {
+		compile.exclude module: "spring-boot-starter-tomcat"
+	}
 }
 
 apply plugin: 'kotlin'
@@ -28,6 +31,7 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile("org.springframework.boot:spring-boot-starter-undertow")
 	compile("org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}")
 
 	compile 'ch.qos.logback:logback-classic:1.1.7'
