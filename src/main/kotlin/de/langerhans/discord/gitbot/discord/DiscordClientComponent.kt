@@ -25,7 +25,7 @@ open class DiscordClientComponent : DisposableBean {
         Configuration.AUTOMATICALLY_ENABLE_MODULES = false
         Configuration.LOAD_EXTERNAL_MODULES = false
 
-        client = ClientBuilder().withToken(config.discordtoken).login()
+        client = ClientBuilder().withToken(config.discordtoken).setMaxReconnectAttempts(25).login()
         eventHandler.setup()
         client.dispatcher.registerListener(eventHandler)
         return client
