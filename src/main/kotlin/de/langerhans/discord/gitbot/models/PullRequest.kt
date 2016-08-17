@@ -26,7 +26,7 @@ data class PullRequest(
         @SerializedName("merged_at") val mergedAt: Date,
         @SerializedName("merge_commit_sha") val mergeCommitSha: String,
         val assignee: UserProfile,
-        val milestone: String,
+        val milestone: Milestone,
         @SerializedName("commits_url") val commitsUrl: String,
         @SerializedName("review_comments_url") val reviewCommentsUrl: String,
         @SerializedName("comments_url") val commentsUrl: String,

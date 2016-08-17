@@ -21,7 +21,7 @@ data class Issue(
         val state: String,
         val locked: Boolean,
         val assignee: UserProfile,
-        val milestone: String,
+        val milestone: Milestone,
         val comments: Long,
         @SerializedName("created_at") val createdAt: Date,
         @SerializedName("updated_at") val updatedAt: Date,
